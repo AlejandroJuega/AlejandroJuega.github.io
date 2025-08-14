@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AlejandroJuega executor</title>
+  <meta name="description" content="Descarga y tutorial de AlejandroJuega executor para Windows y Android." />
+  <meta property="og:title" content="AlejandroJuega executor" />
+  <meta property="og:description" content="Botones de descarga y tutorial en vídeo." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --c-bg-1: #0b1020;
+      --c-bg-2: #0a0f1a;
+      --c-accent: #21d4d4; /* azul turquesa */
+      --c-accent-2: #11b9c3; /* tono más oscuro para hover */
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: #e8f1ff;
+      background:
+        radial-gradient(600px at var(--mx, 50%) var(--my, 30%), rgba(33, 212, 212, 0.22), transparent 60%),
+        linear-gradient(180deg, var(--c-bg-1), var(--c-bg-2));
+      background-attachment: fixed;
+      transition: background-position 0.05s ease-out;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 20px 60px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 0 28px;
+    }
+    .logo {
+      width: 48px; height: 48px;
+      display: grid; place-items: center;
+      border-radius: 12px;
+      background: linear-gradient(145deg, #1b233b, #0f1629);
+      box-shadow: 0 10px 30px rgba(0,0,0,.3), inset 0 0 0 1px rgba(255,255,255,.05);
+    }
+    h1 { margin: 0; font-size: 2rem; letter-spacing: .3px; }
+    p.lead { margin: 6px 0 0; opacity: .8; }.buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin: 28px 0 36px;
+}
+@media (min-width: 700px) {
+  .buttons { grid-template-columns: repeat(2, 1fr); }
+}
+.btn {
+  text-decoration: none;
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px;
+  padding: 16px 18px;
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, var(--c-accent), var(--c-accent-2));
+  color: #07151a; font-weight: 700; letter-spacing: .3px;
+  box-shadow: 0 10px 25px rgba(33, 212, 212, 0.28), inset 0 0 0 1px rgba(255,255,255,.28);
+  transform: translateY(0);
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+.btn:hover { transform: translateY(-2px); filter: brightness(1.05); box-shadow: 0 16px 35px rgba(33,212,212,.35); }
+.btn:active { transform: translateY(0); }
+
+.btn .icon { width: 22px; height: 22px; display: inline-block; }
+.btn .label { font-size: 1.05rem; text-transform: uppercase; }
+
+.section-title {
+  margin: 40px 0 18px;
+  font-size: clamp(1.6rem, 2vw + 1rem, 2.4rem);
+  text-align: center;
+  letter-spacing: .6px;
+}
+.card {
+  background: rgba(255,255,255,0.04);
+  border-radius: var(--radius);
+  padding: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.06);
+}
+.player {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 */
+  border-radius: calc(var(--radius) - 2px);
+  overflow: hidden;
+}
+.player iframe {
+  position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
+}
+footer { margin: 36px 0 0; opacity: .6; font-size: .9rem; text-align: center; }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo" aria-hidden="true">
+        <!-- simple spark icon -->
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2l1.8 4.6L18 8.4l-4.2 1.8L12 15l-1.8-4.8L6 8.4l4.2-1.8L12 2z" fill="#21d4d4"/>
+          <circle cx="12" cy="12" r="10" stroke="#21d4d4" opacity=".25"/>
+        </svg>
+      </div>
+      <div>
+        <h1>AlejandroJuega executor</h1>
+        <p class="lead">Descarga para Windows y Android + video tutorial</p>
+      </div>
+    </header><div class="buttons">
+  <!-- Windows button -->
+  <a class="btn" href="https://www.mumuplayer.com/" target="_blank" rel="noopener">
+    <span class="icon" aria-hidden="true">
+      <!-- Windows logo (SVG) -->
+      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 7l19-3v20H3V7zm0 34l19 3V25H3v16zM26 4l19-3v23H26V4zm0 40l19 3V25H26v19z"/>
+      </svg>
+    </span>
+    <span class="label">Windows</span>
+  </a>
+
+  <!-- Android button -->
+  <a class="btn" href="https://delta-executor.com/" target="_blank" rel="noopener">
+    <span class="icon" aria-hidden="true">
+      <!-- Android robot (SVG) -->
+      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <path d="M33.1 10.2l2.7-4.7a1 1 0 10-1.7-1l-2.8 4.8a14.3 14.3 0 00-12.6 0L15.9 4.5a1 1 0 10-1.7 1l2.7 4.7A12.9 12.9 0 0012 20v11.5a3.5 3.5 0 003.5 3.5h1V42a2 2 0 002 2h3a2 2 0 002-2v-7h3v7a2 2 0 002 2h3a2 2 0 002-2v-7h1a3.5 3.5 0 003.5-3.5V20c0-4.1-2.2-7.7-5.9-9.8zM18 16a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm12 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/>
+      </svg>
+    </span>
+    <span class="label">Android</span>
+  </a>
+</div>
+
+<h2 class="section-title">TUTORIAL</h2>
+<div class="card">
+  <div class="player">
+    <iframe src="https://www.youtube.com/embed/RnfZI32zkk4" title="Tutorial AlejandroJuega executor" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</div>
+
+<footer>
+  <div>© <span id="y"></span> AlejandroJuega executor</div>
+</footer>
+
+  </div>  <script>
+    // Fondo que sigue al puntero (o dedo)
+    (function() {
+      const setPos = (x, y) => {
+        document.body.style.setProperty('--mx', x + 'px');
+        document.body.style.setProperty('--my', y + 'px');
+      };
+      window.addEventListener('mousemove', (e) => setPos(e.clientX, e.clientY));
+      window.addEventListener('touchmove', (e) => {
+        const t = e.touches[0];
+        if (t) setPos(t.clientX, t.clientY);
+      }, { passive: true });
+      // Año del footer automático
+      document.getElementById('y').textContent = new Date().getFullYear();
+    })();
+  </script></body>
+</html>
